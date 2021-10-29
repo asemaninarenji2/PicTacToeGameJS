@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="oxStyle.css" />
+    <title>X-O Game</title>
+  </head>
+  <body>
+  <div>
+    <main>
+     
+      <section class="player player--0 " id="player0Id">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="xo" >X</p>
+      </section> 
+     
+      <section class="player player--1" id="player1Id">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="xo" >O</p>
+        
+      </section>
+
+      
+      <button class="btn btn--new hidden">🔄 New game</button>
+      
+    </main>
+   
+      <table class="tb "  >
+        <tr>
+          <th class="sq" id="sq00">X-O</th>
+          <th class="sq" id="sq01">X-O</th>
+          <th class="sq" id="sq02">X-O</th>
+        </tr>
+        <tr>
+          <td class="sq" id="sq10">X-O</td>
+          <td class="sq" id="sq11">X-O</td>
+          <td class="sq" id="sq12">X-O</td>
+        </tr>
+        <tr>
+          <td class="sq" id="sq20">X-O</td>
+          <td class="sq"id="sq21">X-O</td>
+          <td class="sq" id="sq22">X-O</td>
+        </tr>
+      </table>
+    </div>
+    <button class="btn btn--start" id="btnStart">🎲 START</button>
+    </body>
+    
+    <div class="modal hidden" id="modalId" style="border: rgb(209, 191, 88); ">
+      <button class="close-modal" id="closeModalId">X</button>
+      <h1>Enter names to start the game 😍</h1>
+      
+      <input type="text" id="register-input0" font-size="xxx-large"> 
+      <input type="text" id="register-input1" font-size="xxx-large"> 
+      <button id = "registerBtn" font-size="large">START</button>
+    </div>
+    
+    <div class="modal noWinnerModal hidden" id="noWinnerModalId">
+       <h1>No winner this time 🤷‍♂️🤷‍♂️🤷‍♂️</h1>
+       <button class="btn" id = "noWinnerTryAgainBtnId" font-size="large" style="width: 10rem" style=" height: 3rem;" >TRY AGAIN</button>
+    </div>
+    
+    <div class="modal winnerModal hidden" id="winnerModalId">
+       <h1 id="winnerTagId"></h1>
+       <button class="btn" id = "winnerTryAgainBtnId" font-size="large" style="width: 10rem" style=" height: 3rem;" >TRY AGAIN</button>
+    </div>
+    
+    <div id="overlayId" class="overlay hidden"></div >
+
+      
+      <script src="oxScript.js"></script>
+     
+      
+
+
+
+
+
+
+  </body>
+</html>
